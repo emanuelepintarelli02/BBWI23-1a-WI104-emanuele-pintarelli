@@ -1,0 +1,51 @@
+h1 {
+    font-size: 300%;
+    color: dodgerblue;
+    font-family: 'Trebuchet MS';
+}
+
+h2 {
+    font-size: 300%;
+    color: dodgerblue;            
+    font-family: 'Trebuchet MS';
+}
+
+h3 {
+    font-size: 300%;
+    color: dodgerblue;
+    font-family: 'Trebuchet MS';
+}
+
+img.MyPicture {
+    width: 220px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+table.SteckbriefInfos th {
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    text-align: left;
+    padding: 7px 0px 7px 0px;
+}
+table.SteckbriefInfos td {
+    font-family: "Trebuchet MS";
+    font-size: 20px;
+    padding: 0px 25px 0px 25px;
+}
+
+div.Bilder img {
+    height: 150px;
+    border-radius: 10px;
+    padding: 0px 2px 2px 2px;
+}
+
+div.SocialMedia img {
+    height: 120px;
+    border-radius: 10px;
+    padding: 0px 2px 2px 2px;
+}
+
+div.img_div, div.table_div  {
+    display: inline-block;
+}
