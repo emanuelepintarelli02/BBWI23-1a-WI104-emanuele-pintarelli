@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS';
+            font-size: 14px;
+        }
+
+        div.rectangle {
+            width: 370px;
+            height: 532px;
+            flex-shrink: 0;
+            border-radius: 4px;
+            background: #FFF;
+
+            /* Shadow 1 */
+            box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+
+        }
+
+        .eine-zeile {
+            display: block;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        span.price {
+            padding-left: 246px;
+        }
+
+        li.subtotal {
+            padding-left: 20px;
+        }
+
+        summary.title {
+            padding-top: 19px;
+            color: #000;
+            /* Bold 16px */
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            /* 125% */
+        }
+
+        button.pay_button {
+            width: 333px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background-color: #1D68CD;
+            color: #F6F6F6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle">
+        <details>
+            <summary class="title">Billing Summary</summary>
+            <ul>
+                <li class="subtotal">Subtotal<span class="price">$3370</span></li>
+                <li class="subtotal">Subtotal<span class="price">$3370</span></li>
+                <li class="subtotal">Subtotal<span class="price">$3370</span></li>
+                <li class="subtotal">Subtotal<span class="price">$3370</span></li>
+            </ul>
+        </details>
+        <hr>
+        <label class="eine-zeile">Order comment</label>
+        <textarea class="eine-zeile">
+
+        </textarea>
+        <label class="eine-zeile"><input type="checkbox"> Please check to acknowledge our Privacy & Terms Policy</label>
+        <button class="eine-zeile pay_button">Pay $3,439.00</button>
+    </div>
+</body>
+
+</html>
