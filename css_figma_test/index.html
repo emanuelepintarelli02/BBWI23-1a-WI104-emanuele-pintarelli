@@ -13,7 +13,7 @@
 
         div.rectangle {
             width: 370px;
-            height: 532px;
+            height: 400px;
             flex-shrink: 0;
             border-radius: 4px;
             background: #FFF;
@@ -34,10 +34,13 @@
 
         span.price {
             padding-left: 246px;
+            color: #4F4F4F;
         }
 
         li.subtotal {
             padding-left: 20px;
+            padding-bottom: 10px;
+            color: #4F4F4F;
         }
 
         summary.title {
@@ -46,7 +49,7 @@
             /* Bold 16px */
             font-size: 16px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: bold;
             line-height: 20px;
             /* 125% */
         }
@@ -58,6 +61,36 @@
             border-radius: 8px;
             background-color: #1D68CD;
             color: #F6F6F6;
+            border-color: #1D68CD;
+            box-shadow: 0px 4px 4px 0px rgba(14, 53, 191, 0.25);
+        }
+
+        textarea.order_comment {
+            width: 330px;
+            border-radius: 8px;
+            border: 1px solid var(--dark-dark-1, #B2BCCA);
+            background: #FFF;
+        }
+
+        div.order_comment {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-left: 19px;
+            margin-right: 19px;
+        }
+
+        div.acknowledge_box {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 19px;
+            margin-right: 19px;
+        }
+
+        div.pay_button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-left: 19px;
+            margin-right: 19px;
         }
     </style>
 </head>
@@ -74,12 +107,23 @@
             </ul>
         </details>
         <hr>
-        <label class="eine-zeile">Order comment</label>
-        <textarea class="eine-zeile">
-
-        </textarea>
-        <label class="eine-zeile"><input type="checkbox"> Please check to acknowledge our Privacy & Terms Policy</label>
-        <button class="eine-zeile pay_button">Pay $3,439.00</button>
+        <!--
+        <div class="grand_total">
+            <p class="">Grand Total<span>$3370</span></p>
+        </div>
+        -->
+        <div class="order_comment">
+            <label class="eine-zeile"><span class="order_comment">Order comment</span></label>
+            <textarea class="eine-zeile order_comment">
+            </textarea>
+        </div>
+        <div class="acknowledge_box">
+            <label class="eine-zeile"><input type="checkbox"> Please check to acknowledge our Privacy & Terms
+                Policy</label>
+        </div>
+        <div class="pay_button">
+            <button class="eine-zeile pay_button">Pay $3,439.00</button>
+        </div>
     </div>
 </body>
 
